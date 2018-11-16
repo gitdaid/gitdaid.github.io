@@ -1,0 +1,33 @@
+11-17日练习git 心得体会：
+
+第一步：
+git init      //初始化仓库
+git config --global user.name  ''   //配置用户名
+git config --global user.email ''  //设置邮箱
+
+第二步：
+git  add . (当前目录所有文件) ， 'idnex.html' 指定文件， *.html  指定后缀类型文件  . //添加到临时仓库
+
+第三步：
+git commit  -m '版本说明'     提交到本地仓库 
+
+第四步：
+git push  '服务器路径'  //好像第一次需要 （服务器账号密码）后面不需要
+
+
+
+git reflog  // 查看版本日志
+
+
+git reset --hard HEAD^  回滚上一个版本，（上一个版本就是HEAD^ ，上上一个版本就是 HEAD^^ ，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。）
+
+git reset --hard commit_id   //也可以是使用 commit_id 来在不同版本之间回退。
+
+
+存留疑惑 待解决
+比方说 删错了文件  回退版本后 重新（修改）提交 导致报错。 有个pull 具体怎么使用
+
+
+
+
+
